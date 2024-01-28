@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon"  href="./img/diamod.png">
+</head>
+
+<body>
+    <h1 class="title" id="main-title">Challenge ONE G6 -Lógica de Programación<br></h1>
+    <div class="header">
+        <div>
+            <!--Las ondas "waves" utilizadas en este encriptador, son propiedad de:
+            Copyright (c) 2024 jando programador (https://codepen.io/jandoPro/pen/yLogPyv)-->
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g></svg>
+        </div>
+    </div>
+        <main class="main">
+            <div class="form box">
+                <h2 id="first-msg">Escriba el texto o palabra para encriptar a continuación:</h2>
+                <form action="">
+                    <label for="input-text" id="sub-msg">El texto se mostrará en minúsculas. No se pueden ingresar números
+                    ni caracteres especiales.</label>
+                    <input class="text-input" type="text" name="input-text" id="input" placeholder="Ingrese el texto aquí.">
+                    <span id="error" class="invisible">
+                    </span>
+                    <div class=buttons>
+                        <input class="btn" type="submit" value="Encriptar" id="btn-encrypt">
+                        <input class="btn" type="submit" value="Desencriptar" id="btn-decrypt">
+                    </div>
+                    <div class="msg box">
+                        <h2 id="second-msg">Mensaje encriptado:</h2>
+                        <input class="text-input" type="text" id="output" readonly="readonly"></input>
+                        <div class=buttons>
+                            <input class="btn" type="submit" value="Copiar" id="btn-copy">
+                        </div>
+                    </div>
+            
+                </main>
+</body>
+                  
+            <footer>
+                <p>Copyright © 2024 <a href="https://github.com/mirianGonzalez"> Mirian Gonzalez </a> - Challenge ONE-Principiante en programación<br>
+                    Sprint 01: Construye un encriptador de texto con Javascript
+                </p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
+<script src="js/forms.js"></script>
+<script src="js/validation-and-errors.js"></script>
+<script src="js/buttons-functions.js"></script>
+<script src="js/buttons.js"></script>
+<script src="JS/script.js"></script>
+
